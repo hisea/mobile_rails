@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = MobileRails::VERSION
   s.authors     = ["Hisea"]
   s.email       = ["zyinghai@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "hisea.me"
+  s.summary     = %q{Gem for easy creation of mobile enabled rails app.}
+  s.description = %q{Gem for easy creation of mobile enabled rails app.}
 
   s.rubyforge_project = "mobile_rails"
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
 end
