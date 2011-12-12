@@ -1,0 +1,1 @@
+require 'mobile_rails'
