@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = MobileRails::VERSION
   s.authors     = ["Hisea"]
   s.email       = ["zyinghai@gmail.com"]
-  s.homepage    = "hisea.me"
+  s.homepage    = "https://github.com/hisea/mobile_rails"
   s.summary     = %q{Gem for easy creation of mobile enabled rails app.}
   s.description = %q{Gem for easy creation of mobile enabled rails app.}
 
