@@ -6,11 +6,18 @@ module MobileRails
       end
 
       def mobile_layout
-        mobile? ? "mobile" : 'application' 
+        (mobile? && mobile_session?) ? "mobile" : 'application' 
       end
 
       def set_mobile_request
-        request.format = :mobile if mobile?
+        if mobile?
+          session[:mobile] = true if session[:mobile].nil?
+          request.format = :mobile if mobile_session?
+        end
+      end
+      
+      def mobile_session?
+        session[:mobile] == true
       end
     end
     module ClassMethods
