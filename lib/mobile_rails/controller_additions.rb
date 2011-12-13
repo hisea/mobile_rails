@@ -11,13 +11,13 @@ module MobileRails
 
       def set_mobile_request
         if mobile?
-          session[:mobile] = true if session[:mobile].nil?
+          session[:mobile_session] = true if session[:mobile].nil?
           request.format = :mobile if mobile_session?
         end
       end
       
       def mobile_session?
-        session[:mobile] == true
+        session[:mobile_session] == true
       end
     end
     module ClassMethods
