@@ -15,8 +15,11 @@ How mobile_rails works:
 --------------
 
 1 Web request stays the same.
+
 2 Mobile request comes in, mobile layout is selected and request mime format is set to .mobile.
+
 3 User gets a mobile optimized view of your app.
+
 4 an link to can be given to set the preference to web so user can view the full version on mobile device.
 
 Getting Started
@@ -56,7 +59,8 @@ i.e.
 If you want to give user a choice to view full web version on their mobile device:
 
  add this to your view:
-```haml
+
+```
 = link_to "Web Version", home_web_url, :rel => "external"
 ```
 
