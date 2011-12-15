@@ -1,7 +1,7 @@
 Mobile Rails 
 ---------------
 
-Mobile_rails is a gem designed for integrating crossplat for mmobile web application with rails application.
+Mobile_rails is a gem designed for integrating cross-platform mobile web application with rails application.
 
 What mobile_rails does:
 
@@ -20,7 +20,7 @@ How mobile_rails works:
 
 3 User gets a mobile optimized view of your app.
 
-4 an link to can be given to set the preference to web so user can view the full version on mobile device.
+4 A link/action can be used to set a session variable for viewing the full version on mobile device.
 
 Getting Started
 ---------------
@@ -74,5 +74,7 @@ then in your home_controller:
 ```
 
 If you want to use jQuery Mobile, please checkout [mobile_rails_jqm](https://github.com/hisea/mobile_rails_jqm).
+
+Example of how this gem can be used: [mobile_rails_example](https://github.com/hisea/mobile_rails_example)
 
 
