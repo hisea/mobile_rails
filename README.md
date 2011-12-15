@@ -41,6 +41,8 @@ Add this in your app/controller/application_controller.rb
   has_mobile_rails
 ```
 
+Remove require_tree . from both application.js and css.js in your app/assets directory to not load mobile.js and mobile.css.
+
 You are almost done. 
 Next step is to choose a javascript mobile framework you like, create a mobile.mobile.haml(or .erb) layout in your app/view/layout folder. 
 Then in your controller allow respond_to mobile format and treat your mobile page like normal view but with a name like 'index.mobile.haml'. Web request will render the html version and mobile request will look for the .mobile.haml file.
@@ -59,6 +61,7 @@ If you want to give user a choice to view full web version on their mobile devic
 ```
 
 then in your home_controller:
+
 ```ruby
   def web
     session[:mobile_session] = 0
