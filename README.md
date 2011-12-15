@@ -20,7 +20,7 @@ How mobile_rails works:
 
 3 User gets a mobile optimized view of your app.
 
-4 A link/action can be used to set a session variable for viewing the full version on mobile device.
+4 A link/action can be used to set a session variable for viewing the full web version on mobile device.
 
 Getting Started
 ---------------
