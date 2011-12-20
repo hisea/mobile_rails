@@ -22,6 +22,7 @@ module MobileRails
     end
     module ClassMethods
       def has_mobile_rails
+        self.send(:include, MobileRails::ControllerAdditions::InstanceMethods)
         before_filter :set_mobile_request
 
         helper_method :mobile?
@@ -31,7 +32,7 @@ module MobileRails
   end
 end
 
-
-ActionController::Base.send(:extend, MobileRails::ControllerAdditions::ClassMethods)
-ActionController::Base.send(:include, MobileRails::ControllerAdditions::InstanceMethods)
+if defined? ActionController
+  ActionController::Base.send(:extend, MobileRails::ControllerAdditions::ClassMethods)
+end
 
