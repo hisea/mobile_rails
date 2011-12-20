@@ -1,5 +1,7 @@
-Mobile Rails 
----------------
+# Mobile Rails  
+[![Build Status](https://secure.travis-ci.org/hisea/mobile_rails.png)](https://secure.travis-ci.org/hisea/mobile_rails.png)
+
+
 
 Mobile_rails is a gem designed for integrating cross-platform mobile web application with rails application.
 
@@ -11,8 +13,8 @@ What mobile_rails does:
 
 Mobile_rails can be used with mobile_rails_jqm which is a gem packaged jQuery Mobile 1.0 final with a mobile_rails layout generator.
 
-How mobile_rails works:
---------------
+# How mobile_rails works:
+
 
 1 Web request stays the same.
 
@@ -22,8 +24,8 @@ How mobile_rails works:
 
 4 A link/action can be used to set a session variable for viewing the full web version on mobile device.
 
-Getting Started
----------------
+# Getting Started
+
 
 Include the Gem
 
@@ -50,8 +52,8 @@ You are almost done.
 Next step is to choose a javascript mobile framework you like, create a mobile.mobile.haml(or .erb) layout in your app/view/layout folder. 
 Then in your controller allow respond_to mobile format and treat your mobile page like normal view but with a name like 'index.mobile.haml'. Web request will render the html version and mobile request will look for the .mobile.haml file.
 
-More Info
--------------
+# More Info
+
 * A 'mobile?' helper method is added to your controller and view to detect if the user is using a mobile devise.
 * 'session[:mobile_session]' is used to turn on and off mobile rendering. set to '1' for on and '0' for off.
 
